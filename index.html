@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat Formu</title>
+</head>
+<body>
+    <form method="get" enctype="multipart/form-data">
+        <label for="adSoyad">Ad, Soyad:</label>
+        <input type="text" id="adSoyad" name="adSoyad" placeholder="Ad, Soyad" required minlength="3"><br><br>
+        <label for="yas">Yaş:</label>
+        <input type="number" id="yas" name="yas" placeholder="Yaş" required min="3" max="99"><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
+        <label for="sifre">Şifrə:</label>
+        <input type="password" id="sifre" name="sifre" placeholder="Şifrə" required minlength="7"><br><br>
+        <label>Cinsiyyət:</label><br>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek" required>
+        <label for="erkek">Erkek</label><br>
+        <input type="radio" id="qadin" name="cinsiyet" value="qadin" required>
+        <label for="qadin">Qadın</label><br><br>
+        <label for="sartlar">Şərtlərlə Razıyam:</label>
+        <input type="checkbox" id="sartlar" name="sartlar" required><br><br>
+        <label for="sekil">Şəkil yüklə:</label>
+        <input type="file" id="sekil" name="sekil" accept=".pdf"><br><br>
+        <label for="cv">CV yüklə:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf"><br><br>
+        <button type="submit">Göndər</button>
+        <button type="reset">Təmizlə</button>
+    </form>
+
+</body>
+</html>
